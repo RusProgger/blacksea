@@ -1,0 +1,79 @@
+.main__page {
+    &-bg {
+        background-image: url(../../images/header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 450px;
+    }
+
+    &-body {
+        max-width: 568px;
+        padding: 0 10px;
+        margin: auto;
+    }
+
+    &-title {
+        padding: 117px 0 40px 0;
+        font-size: clamp(1.375rem, 0.75rem + 3.125vw, 2.75rem);
+        color: $textColor;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    &-read {
+        text-align: center;
+    }
+
+    &-link {
+        padding: 10px 48px 13px 48px;
+        border: 3px solid #afb1b4;
+        border-radius: 5px;
+        @include link;
+        transition: 0.3s;
+
+        &:hover {
+            color: $colorLink;
+            background-color: rgba(0, 0, 0, 0.226);
+        }
+    }
+}
+
+// section learn 
+
+.main__learn {
+    &-body {
+        padding-top: 84px;
+        text-align: center;
+    }
+
+    &-title {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-bottom: 36px;
+    }
+
+    &-desc {
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    // cards
+
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 65px 0 50px 0;
+    }
+
+    &-card {
+        flex: 1;
+
+        & > img {
+            margin: auto;
+        }
+    }
+}

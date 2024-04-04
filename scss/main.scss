@@ -1,0 +1,33 @@
+@import "./layout/variable";
+@import "./layout/mixin";
+@import "./layout/container";
+@import "./components/header";
+@import "./components/page";
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    font-size: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+
+
